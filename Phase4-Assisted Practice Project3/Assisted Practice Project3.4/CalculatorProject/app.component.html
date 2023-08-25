@@ -1,0 +1,9 @@
+<div>
+  <label for="numberInput">Enter a number:</label>
+  <input type="number" id="numberInput" [(ngModel)]="inputNumber"/>
+  </div>
+  <div>
+    <p>Square:{{inputNumber | squareCube:'square'}}</p>
+     <p>Cube:{{inputNumber | squareCube:'cube'}}</p>
+  </div>
+  <router-outlet></router-outlet>
